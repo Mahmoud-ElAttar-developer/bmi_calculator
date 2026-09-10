@@ -1,5 +1,5 @@
 import 'package:bmi_calculator/colors.dart';
-import 'package:bmi_calculator/home_view.dart';
+// import 'package:bmi_calculator/home_view.dart';
 import 'package:flutter/material.dart';
 
 class ResultView extends StatelessWidget {
@@ -150,7 +150,7 @@ class ResultView extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.of(context).pop(HomeView());
+                  // Navigator.of(context).pop(HomeView());
                 },
                 child: Text(
                   'Re-Calculate',
