@@ -293,15 +293,12 @@ class _HomeViewState extends State<HomeView> {
                   ),
                 ),
                 onPressed: () {
-                  // 1. حساب النتيجة
-                  double res = weight / ((height / 100) * (height / 100));
-
-                  // 2. الانتقال للشاشة التانية مع إرسال النتيجة والسن
+                  double res = weight / ((height / 100) * (height / 100)); 
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) => ResultView(
                         res: res,
-                        age: age, // لازم تبعت المتغير اللي شايل قيمة السن
+                        age: age,
                       ),
                     ),
                   );
