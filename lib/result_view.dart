@@ -34,8 +34,7 @@ class ResultView extends StatelessWidget {
       status = "Obese Class II";
     else if (res > 40)
       status = "Obese Class III";
-
-    // إضافة تأثير السن على الرسالة
+    
     if (age < 18) {
       return "$status (Age: $age)";
     }
@@ -53,7 +52,6 @@ class ResultView extends StatelessWidget {
       advice = "You are overweight. Try to exercise more!";
     }
 
-    // إضافة تأثير السن على النصيحة في سطر جديد
     if (age < 18) {
       advice =
           "\n(Note: As you are under 18, consult a doctor for a growing body plan)";
@@ -71,7 +69,6 @@ class ResultView extends StatelessWidget {
         elevation: 0,
         foregroundColor: AppColors.whiteColor,
         backgroundColor: AppColors.scaffoldBg,
-        // title: Row(children: []),
       ),
       body: Center(
         child: Column(
@@ -150,7 +147,6 @@ class ResultView extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  // Navigator.of(context).pop(HomeView());
                 },
                 child: Text(
                   'Re-Calculate',
